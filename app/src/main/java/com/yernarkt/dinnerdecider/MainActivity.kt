@@ -1,6 +1,7 @@
 package com.yernarkt.dinnerdecider
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             val random = Random()
             val randomFoodIndex = random.nextInt(foodList.count())
             tvDinnerDeciderTitle.text = foodList[randomFoodIndex]
+            Log.d("TAG", "This a text log")
         }
     }
 }
